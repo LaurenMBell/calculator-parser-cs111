@@ -73,9 +73,6 @@ def eval(exp):
         operator = exp.first
         operands = exp.rest.map(eval)
         return apply(operator, operands)
-    #if Pair.first in ['+', '-', '*', '/']:
-        #r1 = Pair.rest.map()
-        #r2 = apply(Pair.first, r1)
     raise TypeError
 
 def main_loop():
